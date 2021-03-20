@@ -262,7 +262,7 @@ hr {
 
 .right-arrow1 {
   position: absolute;
-margin-left: 6.4rem;
+margin-left: 2.4rem;
 }
 .right-arrow2 {
   position: absolute;
@@ -400,5 +400,26 @@ margin-left: 6.89rem;
 h1{font-size: 1em;}
 h3{font-size: .8em;}
 .more-looks2 , .more-looks1{visibility: hidden;}
-/* {visibility: hidden;} */
+.right-arrow2 {
+  position: absolute;
+margin-left: 3rem;
+}
+
+.right-arrow3 {
+  position: absolute;
+margin-left: 3rem;
+}
+.right-arrow4 {
+  position: absolute;
+margin-left: 3rem;
+}
+
+.right-arrow5 {
+  position: absolute;
+margin-left: 3rem;
+}
+.insta-pics {
+  width: 16.6%;
+}
+
 }
