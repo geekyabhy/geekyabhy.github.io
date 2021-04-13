@@ -164,6 +164,17 @@ body {
   right: 5px;
   bottom: 2px;
 }
+.dot.inactive {
+  height: 6px;
+  width: 6px;
+  margin-right: -5px;
+  margin-left: 6px;
+  margin-bottom: 5px;
+  background-color: #7e5a99;
+  border-radius: 50%;
+  display: inline-block;
+}
+
 
 .inactive {
   background-color: #e0e0e0;
