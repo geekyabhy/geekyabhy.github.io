@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+ <meta charset="utf-8">
+ <title>table-paid</title>
+
+ <!-- Google Fonts -->
+ <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+ <!-- CSS Stylesheets -->
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <!-- Font Awesome -->
+ <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+
+ <!-- Bootstrap Scripts -->
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+ <div class="sectn">
+
+   <div class="top-text">
+     <H5 class="usd"> TABLE HEADING</h5>
+     <div class="row">
+       <div class="col-4">
+         <a class="txt1" href="C:\Users\Sabina\Desktop\Assignment_for_Front_End_Developer\assignment30.03-table\index.html">All</a>
+         <a class="txt1" href="#">Paid</a>
+         <a class="txt1" href="C:\Users\Sabina\Desktop\Assignment_for_Front_End_Developer\assignment30.03-table\unpaid.html">Unpaid</a>
+<a class="txt1" href="C:\Users\Sabina\Desktop\Assignment_for_Front_End_Developer\assignment30.03-table\overdue.html">Overdue</a>
+
+
+
+       </div>
+
+       <div class="col-4 ml-auto mr-0 px-0 text-right">
+         Total Payable Amount: <span class="dollr">$900.00</span> <span class="usd">USD</span>
+       </div>
+     </div>
+     <hr class="hr1">
+     <hr style="
+    position: relative;
+    bottom: 12px;
+    right: -52px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    height: 3.5px;
+    width: 40px;
+    text-align: left;
+    background: black;" >
+
+   </div>
+
+
+   <div class="container">
+
+
+     <div class="row">
+       <div class="col-12">
+         <div class="card">
+           <div class="card-body text-center">
+             <div class="row">
+               <div class="col-1">
+                 <button type="button" class="btn btn-outline-primary ms-0 color-purpl"><i class="fas fa-filter"></i> Filter</button>
+               </div>
+               <div class="col-4 ">
+
+
+                 <div class="input-group rounded">
+                   <input type="search" class="form-control rounded serch color-purpl" placeholder=" Search users by name, email or date" aria-label="Search" aria-describedby="search-addon" />
+
+                   <!-- <i class="fas fa-search"></i> -->
+
+                 </div>
+               </div>
+
+
+
+               <div class="col-1 ml-auto mr-5">
+
+                 <button type="button" class="btn btn-primary btn-lg bg-purpl"><b>PAY DUES</b></button>
+               </div>
+
+             </div>
+           </div>
+           <div class="table-responsive">
+             <table class="table">
+               <thead class="thead-light">
+                 <tr>
+                   <th> <label class="customcheckbox m-b-20"> <input type="checkbox" id="mainCheckbox"> <span class="checkmark"></span> </label> </th>
+                   <th scope="col"> </th>
+                   <th scope="col">NAME</th>
+                   <th scope="col">USER STATUS</th>
+                   <th scope="col">PAYMENT STATUS</th>
+                   <th scope="col">AMOUNT</th>
+                   <th scope="col"> </th>
+
+                   <th class="three-dot" scope="col"><i class='fa fa-ellipsis-v'></i></th>
+                 </tr>
+               </thead>
+               <tbody class="customtable">
+                 <!-- 1 -->
+                 <div class="">
+                   <table class="table">
+
+
+
+
+                     <tr>
+
+                       <th> <label class="customcheckbox"> <input type="checkbox" class="listCheckbox"> <span class="checkmark"></span> </label> </th>
+                       <td><i onclick="myFunction(this)" data-toggle="collapse" data-parent="#accordion6" href="#collapsesix" id="accordion6" class="fas fa-chevron-circle-down accordion-toggle collapsed"></i></td>
+                       <td class="name">
+                         <div class="row bolder-text">
+                           Justin septimus
+                         </div>
+                         <div class="row">
+                           example@email.com
+                         </div>
+                       </td>
+                       <td>
+                         <div class="row activee ">
+                           <div class="col">
+                             <span class='dot'></span>
+                           </div>
+                           <div class="col active1">
+                             active
+                           </div>
+
+                         </div>
+                         <div class="row">
+                           Last Login: 14/APR/2020
+                         </div>
+                       </td>
+                       <td>
+                         <div class="row paid ">
+                           <div class="col">
+                             <span class='dotpaid'></span>
+                           </div>
+                           <div class="col paid1">
+                             Paid
+                           </div>
+
+                         </div>
+                         <div class="row">
+                           Paid On 15/APR/2020
+                         </div>
+                       </td>
+                       <td>
+                         <div class="row bolder-text">
+                           $200
+                         </div>
+                         <div class="row">
+                           USD
+                         </div>
+                       </td>
+                       <td>view more</td>
+                       <td class="three-dot"><i class='fa fa-ellipsis-v'></i></td>
+                     </tr>
+
+                     <tr class="hide-table-padding">
+                       <!-- <td class="extra-td"></td>
+                                         <td class="extra-td"></td> -->
+
+                       <td colspan="8">
+                         <div id="collapsesix" class="collapse in p-6">
+
+                           <table class="table">
+                             <thead class="thead-light">
+                               <tr>
+
+                                 <th scope="col">DATE</th>
+                                 <th> </th>
+                                 <th scope="col">USER ACTITITY</th>
+                                 <th scope="col">DETAIL</th>
+
+                               </tr>
+                             </thead>
+                             <tbody class="customtable expand-body">
+                               <tr class="expand-row">
+
+
+                                 <td class="expand-data">12/APR/2020</td>
+                                 <td> </td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                   nisi
+                                   ut aliquip ex ea
+                                 </td>
+
+                               </tr>
+                               <tr class="expand-row">
+
+
+                                 <td class="expand-data">12/APR/2020</td>
+                                 <td> </td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                   nisi
+                                   ut aliquip ex ea
+                                 </td>
+                               </tr>
+
+                               <tr class="expand-row">
+
+
+                                 <td class="expand-data">12/APR/2020</td>
+                                 <td> </td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                   nisi
+                                   ut aliquip ex ea
+                                 </td>
+
+                               </tr>
+                             </tbody>
+
+                         </div>
+                       </td>
+
+                     </tr>
+                   </table>
+
+                 </div>
+                 <!-- 2 -->
+                 <!-- <div class="">
+                   <table class="table">
+
+
+
+
+                     <tr class="accordion-toggle collapsed" id="accordion9" data-toggle="collapse" data-parent="#accordion9" href="#collapsenine">
+
+                       <th> <label class="customcheckbox"> <input type="checkbox" class="listCheckbox"> <span class="checkmark"></span> </label> </th>
+                       <td><i class="fas fa-chevron-circle-down"></i></td>
+                       <td class="name">
+                         <div class="row bolder-text">
+                           Justin septimus
+                         </div>
+                         <div class="row">
+                           example@email.com
+                         </div>
+                       </td>
+                       <td>
+                         <div class="row activee ">
+                           <div class="col">
+                             <span class='dot'></span>
+                           </div>
+                           <div class="col active1">
+                             active
+                           </div>
+
+                         </div>
+                         <div class="row">
+                           Last Login: 14/APR/2020
+                         </div>
+                       </td>
+                       <td>
+                         <div class="row unpaid ">
+                           <div class="col">
+                             <span class='dotunpaid'></span>
+                           </div>
+                           <div class="col unpaid1">
+                             Unpaid
+                           </div>
+
+                         </div>
+                         <div class="row">
+                           Paid On 15/APR/2020
+                         </div>
+                       </td>
+                       <td>
+                         <div class="row bolder-text">
+                           $200
+                         </div>
+                         <div class="row">
+                           USD
+                         </div>
+                       </td>
+                       <td>view more</td>
+                       <td class="three-dot"><i class='fa fa-ellipsis-v'></i></td>
+                     </tr>
+
+                     <tr class="hide-table-padding">
+                       <!-- <td class="extra-td"></td>
+                                         <td class="extra-td"></td> -->
+<!--
+                       <td colspan="8">
+                         <div id="collapsenine" class="collapse in p-6">
+
+                           <table class="table">
+                             <thead class="thead-light">
+                               <tr>
+
+                                 <th scope="col">DATE</th>
+                                 <th> </th>
+                                 <th scope="col">USER ACTITITY</th>
+                                 <th scope="col">DETAIL</th>
+
+                               </tr>
+                             </thead>
+                             <tbody class="customtable expand-body">
+                               <tr class="expand-row">
+
+
+                                 <td class="expand-data">12/APR/2020</td>
+                                 <td> </td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                   nisi
+                                   ut aliquip ex ea
+                                 </td>
+
+                               </tr>
+                               <tr class="expand-row">
+
+
+                                 <td class="expand-data">12/APR/2020</td>
+                                 <td> </td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                   nisi
+                                   ut aliquip ex ea
+                                 </td>
+                               </tr>
+
+                               <tr class="expand-row">
+
+
+                                 <td class="expand-data">12/APR/2020</td>
+                                 <td> </td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                   nisi
+                                   ut aliquip ex ea
+                                 </td>
+
+                               </tr>
+                             </tbody>
+
+                         </div>
+                       </td>
+
+                     </tr>
+                   </table>
+
+                 </div> -->
+                 <!-- 3 -->
+                 <div class="">
+                   <table class="table">
+
+
+
+
+                     <tr class="accordion-toggle collapsed" id="accordion8" data-toggle="collapse" data-parent="#accordion8" href="#collapseeight">
+
+                       <th> <label class="customcheckbox"> <input type="checkbox" class="listCheckbox"> <span class="checkmark"></span> </label> </th>
+                       <td><i class="fas fa-chevron-circle-down"></i></td>
+                       <td class="name">
+                         <div class="row bolder-text">
+                           Justin septimus
+                         </div>
+                         <div class="row">
+                           example@email.com
+                         </div>
+                       </td>
+                       <td>
+                         <div class="row activee ">
+                           <div class="col">
+                             <span class='dot'></span>
+                           </div>
+                           <div class="col active1">
+                             active
+                           </div>
+
+                         </div>
+                         <div class="row">
+                           Last Login: 14/APR/2020
+                         </div>
+                       </td>
+                       <td>
+                         <div class="row paid ">
+                           <div class="col">
+                             <span class='dotpaid'></span>
+                           </div>
+                           <div class="col paid1">
+                             Paid
+                           </div>
+
+                         </div>
+                         <div class="row">
+                           Paid On 15/APR/2020
+                         </div>
+                       </td>
+                       <td>
+                         <div class="row bolder-text">
+                           $200
+                         </div>
+                         <div class="row">
+                           USD
+                         </div>
+                       </td>
+                       <td>view more</td>
+                       <td class="three-dot"><i class='fa fa-ellipsis-v'></i></td>
+                     </tr>
+
+                     <tr class="hide-table-padding">
+                       <!-- <td class="extra-td"></td>
+                                         <td class="extra-td"></td> -->
+
+                       <td colspan="8">
+                         <div id="collapseeight" class="collapse in p-6">
+
+                           <table class="table">
+                             <thead class="thead-light">
+                               <tr>
+
+                                 <th scope="col">DATE</th>
+                                 <th> </th>
+                                 <th scope="col">USER ACTITITY</th>
+                                 <th scope="col">DETAIL</th>
+
+                               </tr>
+                             </thead>
+                             <tbody class="customtable expand-body">
+                               <tr class="expand-row">
+
+
+                                 <td class="expand-data">12/APR/2020</td>
+                                 <td> </td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                   nisi
+                                   ut aliquip ex ea
+                                 </td>
+
+                               </tr>
+                               <tr class="expand-row">
+
+
+                                 <td class="expand-data">12/APR/2020</td>
+                                 <td> </td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                   nisi
+                                   ut aliquip ex ea
+                                 </td>
+                               </tr>
+
+                               <tr class="expand-row">
+
+
+                                 <td class="expand-data">12/APR/2020</td>
+                                 <td> </td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                   nisi
+                                   ut aliquip ex ea
+                                 </td>
+
+                               </tr>
+                             </tbody>
+
+                         </div>
+                       </td>
+
+                     </tr>
+                   </table>
+
+                 </div>
+                 <!-- 4 -->
+                 <!-- <div class="">
+                   <table class="table">
+
+
+
+
+                     <tr class="accordion-toggle collapsed" id="accordion7" data-toggle="collapse" data-parent="#accordion7" href="#collapseseven">
+
+                       <th> <label class="customcheckbox"> <input type="checkbox" class="listCheckbox"> <span class="checkmark"></span> </label> </th>
+                       <td><i class="fas fa-chevron-circle-down"></i></td>
+                       <td class="name">
+                         <div class="row bolder-text">
+                           Justin septimus
+                         </div>
+                         <div class="row">
+                           example@email.com
+                         </div>
+                       </td>
+                       <td>
+                         <div class="row activee ">
+                           <div class="col">
+                             <span class='dot'></span>
+                           </div>
+                           <div class="col active1">
+                             active
+                           </div>
+
+                         </div>
+                         <div class="row">
+                           Last Login: 14/APR/2020
+                         </div>
+                       </td>
+                       <td>
+                         <div class="row unpaid ">
+                           <div class="col">
+                             <span class='dotunpaid'></span>
+                           </div>
+                           <div class="col unpaid1">
+                             Unpaid
+                           </div>
+
+                         </div>
+                         <div class="row">
+                           Paid On 15/APR/2020
+                         </div>
+                       </td>
+                       <td>
+                         <div class="row bolder-text">
+                           $200
+                         </div>
+                         <div class="row">
+                           USD
+                         </div>
+                       </td>
+                       <td>view more</td>
+                       <td class="three-dot"><i class='fa fa-ellipsis-v'></i></td>
+                     </tr>
+
+                     <tr class="hide-table-padding">
+                       <!-- <td class="extra-td"></td>
+                                         <td class="extra-td"></td> -->
+
+                       <!-- <td colspan="8">
+                         <div id="collapseseven" class="collapse in p-6">
+
+                           <table class="table">
+                             <thead class="thead-light">
+                               <tr>
+
+                                 <th scope="col">DATE</th>
+                                 <th> </th>
+                                 <th scope="col">USER ACTITITY</th>
+                                 <th scope="col">DETAIL</th>
+
+                               </tr>
+                             </thead>
+                             <tbody class="customtable expand-body">
+                               <tr class="expand-row">
+
+
+                                 <td class="expand-data">12/APR/2020</td>
+                                 <td> </td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                   nisi
+                                   ut aliquip ex ea
+                                 </td>
+
+                               </tr>
+                               <tr class="expand-row">
+
+
+                                 <td class="expand-data">12/APR/2020</td>
+                                 <td> </td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                   nisi
+                                   ut aliquip ex ea
+                                 </td>
+                               </tr>
+
+                               <tr class="expand-row">
+
+
+                                 <td class="expand-data">12/APR/2020</td>
+                                 <td> </td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                   nisi
+                                   ut aliquip ex ea
+                                 </td>
+
+                               </tr>
+                             </tbody>
+
+                         </div>
+                       </td>
+
+                     </tr>
+                   </table>
+
+                 </div> -->
+                 <!-- 5 -->
+                 <div class="">
+                   <table class="table">
+
+
+
+
+                     <tr class="accordion-toggle collapsed" id="accordion5" data-toggle="collapse" data-parent="#accordion5" href="#collapsefive">
+
+                       <th> <label class="customcheckbox"> <input type="checkbox" class="listCheckbox"> <span class="checkmark"></span> </label> </th>
+                       <td><i class="fas fa-chevron-circle-down"></i></td>
+                       <td class="name">
+                         <div class="row bolder-text">
+                           Justin septimus
+                         </div>
+                         <div class="row">
+                           example@email.com
+                         </div>
+                       </td>
+                       <td>
+                         <div class="row inactive ">
+                           <div class="col">
+                             <span class='dot'></span>
+                           </div>
+                           <div class="col inactive1">
+                             Inactive
+                           </div>
+
+                         </div>
+                         <div class="row">
+                           Last Login: 14/APR/2020
+                         </div>
+                       </td>
+                       <td>
+                         <div class="row paid ">
+                           <div class="col">
+                             <span class='dotpaid'></span>
+                           </div>
+                           <div class="col paid1">
+                             Paid
+                           </div>
+
+                         </div>
+                         <div class="row">
+                           Paid On 15/APR/2020
+                         </div>
+                       </td>
+                       <td>
+                         <div class="row bolder-text">
+                           $200
+                         </div>
+                         <div class="row">
+                           USD
+                         </div>
+                       </td>
+                       <td>view more</td>
+                       <td class="three-dot"><i class='fa fa-ellipsis-v'></i></td>
+                     </tr>
+
+                     <tr class="hide-table-padding">
+                       <!-- <td class="extra-td"></td>
+                                         <td class="extra-td"></td> -->
+
+                       <td colspan="8">
+                         <div id="collapsefive" class="collapse in p-6">
+
+                           <table class="table">
+                             <thead class="thead-light">
+                               <tr>
+
+                                 <th scope="col">DATE</th>
+                                 <th> </th>
+                                 <th scope="col">USER ACTITITY</th>
+                                 <th scope="col">DETAIL</th>
+
+                               </tr>
+                             </thead>
+                             <tbody class="customtable expand-body">
+                               <tr class="expand-row">
+
+
+                                 <td class="expand-data">12/APR/2020</td>
+                                 <td> </td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                   nisi
+                                   ut aliquip ex ea
+                                 </td>
+
+                               </tr>
+                               <tr class="expand-row">
+
+
+                                 <td class="expand-data">12/APR/2020</td>
+                                 <td> </td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                   nisi
+                                   ut aliquip ex ea
+                                 </td>
+                               </tr>
+
+                               <tr class="expand-row">
+
+
+                                 <td class="expand-data">12/APR/2020</td>
+                                 <td> </td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                   nisi
+                                   ut aliquip ex ea
+                                 </td>
+
+                               </tr>
+                             </tbody>
+
+                         </div>
+                       </td>
+
+                     </tr>
+                   </table>
+
+                 </div>
+                 <!-- 6 -->
+                 <div class="">
+                   <table class="table">
+
+
+
+
+                     <tr class="accordion-toggle collapsed" id="accordion4" data-toggle="collapse" data-parent="#accordion4" href="#collapsefour">
+
+                       <th> <label class="customcheckbox"> <input type="checkbox" class="listCheckbox"> <span class="checkmark"></span> </label> </th>
+                       <td><i class="fas fa-chevron-circle-down"></i></td>
+                       <td class="name">
+                         <div class="row bolder-text">
+                           Justin septimus
+                         </div>
+                         <div class="row">
+                           example@email.com
+                         </div>
+                       </td>
+                       <td>
+                         <div class="row inactive ">
+                           <div class="col">
+                             <span class='dot'></span>
+                           </div>
+                           <div class="col inactive1">
+                             Inactive
+                           </div>
+
+                         </div>
+                         <div class="row">
+                           Last Login: 14/APR/2020
+                         </div>
+                       </td>
+                       <td>
+                         <div class="row paid ">
+                           <div class="col">
+                             <span class='dotpaid'></span>
+                           </div>
+                           <div class="col paid1">
+                             Paid
+                           </div>
+
+                         </div>
+                         <div class="row">
+                           Paid On 15/APR/2020
+                         </div>
+                       </td>
+                       <td>
+                         <div class="row bolder-text">
+                           $200
+                         </div>
+                         <div class="row">
+                           USD
+                         </div>
+                       </td>
+                       <td>view more</td>
+                       <td class="three-dot"><i class='fa fa-ellipsis-v'></i></td>
+                     </tr>
+
+                     <tr class="hide-table-padding">
+                       <!-- <td class="extra-td"></td>
+                                         <td class="extra-td"></td> -->
+
+                       <td colspan="8">
+                         <div id="collapsefour" class="collapse in p-6">
+
+                           <table class="table">
+                             <thead class="thead-light">
+                               <tr>
+
+                                 <th scope="col">DATE</th>
+                                 <th> </th>
+                                 <th scope="col">USER ACTITITY</th>
+                                 <th scope="col">DETAIL</th>
+
+                               </tr>
+                             </thead>
+                             <tbody class="customtable expand-body">
+                               <tr class="expand-row">
+
+
+                                 <td class="expand-data">12/APR/2020</td>
+                                 <td> </td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                   nisi
+                                   ut aliquip ex ea
+                                 </td>
+
+                               </tr>
+                               <tr class="expand-row">
+
+
+                                 <td class="expand-data">12/APR/2020</td>
+                                 <td> </td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                   nisi
+                                   ut aliquip ex ea
+                                 </td>
+                               </tr>
+
+                               <tr class="expand-row">
+
+
+                                 <td class="expand-data">12/APR/2020</td>
+                                 <td> </td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                   nisi
+                                   ut aliquip ex ea
+                                 </td>
+
+                               </tr>
+                             </tbody>
+
+                         </div>
+                       </td>
+
+                     </tr>
+                   </table>
+
+                 </div>
+                 <!-- 7 -->
+                 <div class="">
+                   <table class="table">
+
+
+
+
+                     <tr class="accordion-toggle collapsed" id="accordion3" data-toggle="collapse" data-parent="#accordion3" href="#collapsethree">
+
+                       <th> <label class="customcheckbox"> <input type="checkbox" class="listCheckbox"> <span class="checkmark"></span> </label> </th>
+                       <td><i class="fas fa-chevron-circle-down"></i></td>
+                       <td class="name">
+                         <div class="row bolder-text">
+                           Justin septimus
+                         </div>
+                         <div class="row">
+                           example@email.com
+                         </div>
+                       </td>
+                       <td>
+                         <div class="row inactive ">
+                           <div class="col">
+                             <span class='dot'></span>
+                           </div>
+                           <div class="col inactive1">
+                             Inactive
+                           </div>
+
+                         </div>
+                         <div class="row">
+                           Last Login: 14/APR/2020
+                         </div>
+                       </td>
+                       <td>
+                         <div class="row paid ">
+                           <div class="col">
+                             <span class='dotpaid'></span>
+                           </div>
+                           <div class="col paid1">
+                             Paid
+                           </div>
+
+                         </div>
+                         <div class="row">
+                           Paid On 15/APR/2020
+                         </div>
+                       </td>
+                       <td>
+                         <div class="row bolder-text">
+                           $200
+                         </div>
+                         <div class="row">
+                           USD
+                         </div>
+                       </td>
+                       <td>view more</td>
+                       <td class="three-dot"><i class='fa fa-ellipsis-v'></i></td>
+                     </tr>
+
+                     <tr class="hide-table-padding">
+                       <!-- <td class="extra-td"></td>
+                                       <td class="extra-td"></td> -->
+
+                       <td colspan="8">
+                         <div id="collapsethree" class="collapse in p-6">
+
+                           <table class="table">
+                             <thead class="thead-light">
+                               <tr>
+
+                                 <th scope="col">DATE</th>
+                                 <th> </th>
+                                 <th scope="col">USER ACTITITY</th>
+                                 <th scope="col">DETAIL</th>
+
+                               </tr>
+                             </thead>
+                             <tbody class="customtable expand-body">
+                               <tr class="expand-row">
+
+
+                                 <td class="expand-data">12/APR/2020</td>
+                                 <td> </td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                   nisi
+                                   ut aliquip ex ea
+                                 </td>
+
+                               </tr>
+                               <tr class="expand-row">
+
+
+                                 <td class="expand-data">12/APR/2020</td>
+                                 <td> </td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                   nisi
+                                   ut aliquip ex ea
+                                 </td>
+                               </tr>
+
+                               <tr class="expand-row">
+
+
+                                 <td class="expand-data">12/APR/2020</td>
+                                 <td> </td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</td>
+                                 <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                   nisi
+                                   ut aliquip ex ea
+                                 </td>
+
+                               </tr>
+                             </tbody>
+
+                         </div>
+                       </td>
+
+                     </tr>
+                   </table>
+
+                 </div>
+                 <!-- 8 -->
+                 <tr>
+                   <th> <label class="customcheckbox"> <input type="checkbox" class="listCheckbox"> <span class="checkmark"></span> </label> </th>
+                   <td><i class="fas fa-chevron-circle-down"></i></td>
+                   <td class="name">
+                     <div class="row bolder-text">
+                       Justin septimus
+                     </div>
+                     <div class="row">
+                       example@email.com
+                     </div>
+                   </td>
+                   <td>
+                     <div class="row activee ">
+                       <div class="col">
+                         <span class='dot'></span>
+                       </div>
+                       <div class="col active1">
+                         Active
+                       </div>
+
+                     </div>
+                     <div class="row">
+                       Last Login: 14/APR/2020
+                     </div>
+                   </td>
+                   <td>
+                     <div class="row paid ">
+                       <div class="col">
+                         <span class='dotpaid'></span>
+                       </div>
+                       <div class="col paid1">
+                         Paid
+                       </div>
+
+                     </div>
+                     <div class="row">
+                       Paid On 15/APR/2020
+                     </div>
+                   </td>
+                   <td>
+                     <div class="row bolder-text">
+                       $200
+                     </div>
+                     <div class="row">
+                       USD
+                     </div>
+                   </td>
+                   <td>view more</td>
+                   <td class="three-dot"><i class='fa fa-ellipsis-v'></i></td>
+                 </tr>
+                 <!-- 9 -->
+                 <!-- <tr>
+                   <th> <label class="customcheckbox"> <input type="checkbox" class="listCheckbox"> <span class="checkmark"></span> </label> </th>
+                   <td><i class="fas fa-chevron-circle-down"></i></td>
+                   <td class="name">
+                     <div class="row bolder-text">
+                       Justin septimus
+                     </div>
+                     <div class="row">
+                       example@email.com
+                     </div>
+                   </td>
+                   <td>
+                     <div class="row inactive ">
+                       <div class="col">
+                         <span class='dot'></span>
+                       </div>
+                       <div class="col inactive1">
+                         Inactive
+                       </div>
+
+                     </div>
+                     <div class="row">
+                       Last Login: 14/APR/2020
+                     </div>
+                   </td>
+                   <td>
+                     <div class="row unpaid ">
+                       <div class="col">
+                         <span class='dotunpaid'></span>
+                       </div>
+                       <div class="col unpaid1">
+                         Unpaid
+                       </div>
+
+                     </div>
+                     <div class="row">
+                       Paid On 15/APR/2020
+                     </div>
+                   </td>
+                   <td>
+                     <div class="row bolder-text">
+                       $200
+                     </div>
+                     <div class="row">
+                       USD
+                     </div>
+                   </td>
+                   <td>view more</td>
+                   <td class="three-dot"><i class='fa fa-ellipsis-v'></i></td>
+                 </tr> -->
+                 <!-- 10 -->
+
+
+                 <tr class="accordion-toggle collapsed" id="accordion2" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+
+                   <th> <label class="customcheckbox"> <input type="checkbox" class="listCheckbox"> <span class="checkmark"></span> </label> </th>
+                   <td><i class="fas fa-chevron-circle-down"></i></td>
+                   <td class="name">
+                     <div class="row bolder-text">
+                       Justin septimus
+                     </div>
+                     <div class="row">
+                       example@email.com
+                     </div>
+                   </td>
+                   <td>
+                     <div class="row inactive ">
+                       <div class="col">
+                         <span class='dot'></span>
+                       </div>
+                       <div class="col inactive1">
+                         Inactive
+                       </div>
+
+                     </div>
+                     <div class="row">
+                       Last Login: 14/APR/2020
+                     </div>
+                   </td>
+                   <td>
+                     <div class="row paid ">
+                       <div class="col">
+                         <span class='dotpaid'></span>
+                       </div>
+                       <div class="col paid1">
+                         Paid
+                       </div>
+
+                     </div>
+                     <div class="row">
+                       Paid On 15/APR/2020
+                     </div>
+                   </td>
+                   <td>
+                     <div class="row bolder-text">
+                       $200
+                     </div>
+                     <div class="row">
+                       USD
+                     </div>
+                   </td>
+                   <td>view more</td>
+                   <td class="three-dot"><i class='fa fa-ellipsis-v'></i></td>
+                 </tr>
+
+                 <tr class="hide-table-padding">
+                   <!-- <td class="extra-td"></td>
+                     <td class="extra-td"></td> -->
+
+                   <td colspan="8">
+                     <div id="collapseTwo" class="collapse in p-6">
+
+                       <table class="table">
+                         <thead class="thead-light">
+                           <tr>
+
+                             <th scope="col">DATE</th>
+                             <th> </th>
+                             <th scope="col">USER ACTITITY</th>
+                             <th scope="col">DETAIL</th>
+
+                           </tr>
+                         </thead>
+                         <tbody class="customtable expand-body">
+                           <tr class="expand-row">
+
+
+                             <td class="expand-data">12/APR/2020</td>
+                             <td> </td>
+                             <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</td>
+                             <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                               ut aliquip ex ea
+                             </td>
+
+                           </tr>
+                           <tr class="expand-row">
+
+
+                             <td class="expand-data">12/APR/2020</td>
+                             <td> </td>
+                             <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</td>
+                             <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                               ut aliquip ex ea
+                             </td>
+                           </tr>
+
+                           <tr class="expand-row">
+
+
+                             <td class="expand-data">12/APR/2020</td>
+                             <td> </td>
+                             <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</td>
+                             <td class="expand-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                               ut aliquip ex ea
+                             </td>
+
+                           </tr>
+                         </tbody>
+
+                     </div>
+                   </td>
+
+                 </tr>
+
+               </tbody>
+             </table>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+
+ </div>
+
+
+</body>
+
+</html>
